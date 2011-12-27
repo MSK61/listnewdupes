@@ -40,6 +40,7 @@ my $newDupeFile = "newDupes.txt";
 my $newPkgFile = "allNew.txt";
 my @totalUpdates = ();
 my @updatedDupes = ();
+
 # Read the file containing the duplicate packages.
 open dupeRep, $ARGV[0] or die "Couldn't open $ARGV[0]: $!\n";
 @dupeList = map {
@@ -49,6 +50,7 @@ open dupeRep, $ARGV[0] or die "Couldn't open $ARGV[0]: $!\n";
 
 } <dupeRep>;
 close dupeRep;
+
 # Read the file containing the recently updated files.
 open updateRep, $ARGV[1] or die "Couldn't open $ARGV[1]: $!\n";
 
@@ -62,10 +64,12 @@ while (<updateRep>)
    }
 
 close updateRep;
+
 # Dump all the newly updated packages.
 open newPkgRep, "> $newPkgFile";
 print newPkgRep "$_\n" for @totalUpdates;
 close newPkgRep;
+
 # Dump the newly updated duplicate packages.
 open newDupeRep, "> $newDupeFile";
 print newDupeRep "$_\n" for @updatedDupes;
