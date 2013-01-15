@@ -29,6 +29,8 @@
 #
 # environment:  Komodo IDE, version 6.1.3, build 66534, perl 5.14.2, Fedora
 #               release 16 (Verne)
+#               Komodo IDE, version 7.1.2, build 73175, perl 5.14.3, Fedora
+#               release 17 (Beefy Miracle)
 #
 # notes:        This is a private program.
 #
@@ -51,7 +53,7 @@ open dupeRep, $ARGV[0] or die "Couldn't open $ARGV[0]: $!\n";
 } <dupeRep>;
 close dupeRep;
 
-# Read the file containing the recently updated files.
+# Read the file containing the recently updated packages.
 open updateRep, $ARGV[1] or die "Couldn't open $ARGV[1]: $!\n";
 
 while (<updateRep>)
