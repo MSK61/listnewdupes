@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 ############################################################
 #
-# Copyright 2011, 2013, 2014 Mohammed El-Afifi
+# Copyright 2011, 2013, 2014, 2017 Mohammed El-Afifi
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Lesser General Public License as published by
@@ -25,12 +25,14 @@
 # description:  summarizes the latest version of duplicate installed RPM
 #               packages
 #
-# author:       Mohammed Safwat (MS)
+# author:       Mohammed El-Afifi (ME)
 #
 # environment:  Komodo IDE, version 6.1.3, build 66534, perl 5.14.2, Fedora
 #               release 16 (Verne)
 #               Komodo IDE, version 7.1.2, build 73175, perl 5.14.3, Fedora
 #               release 17 (Beefy Miracle)
+#               emacs 25.1.1, python 2.7.13, Fedora release 25 (Twenty
+#               Five)
 #
 # notes:        This is a private program.
 #
